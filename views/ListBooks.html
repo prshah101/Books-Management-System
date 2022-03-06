@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <a href="/" style="color: #152baa">Homepage</a>  <a href="/getNewBook" style="color: #152baa">New Book</a> <a href="/getListBooks"style="color: #152baa">List Books</a> <a href="/deleteBooks"style="color: #152baa">Delete Books</a> <a href="/updateBooks"style="color: #152baa">Update Books</a> <a href="/getSummary"style="color: #152baa">Summary by Title</a>  <a href="*"style="color: #152baa">404 Page</a> 
+</head>
+<h1>List of Books </h1>
+<body>
+    <h3>The list of books in the database is:
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Topic</th>
+                <th>Date of Publishing</th>
+                <th>Summary</th>
+            </tr>
+            <% for ( let i =0; i< books.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= books[i].title %>
+                    </td>
+                    <td>
+                        <%= books[i].author %>
+                    </td>
+                    <td>
+                        <%= books[i].topic %>
+                    </td>
+                    <td>
+                        <%= books[i].DOP %>
+                    </td>
+                    <td>
+                        <%= books[i].summary %>
+                    </td>
+                </tr>
+                <% }%>
+     </table>
+    </h3>
+</body>
+</html>
