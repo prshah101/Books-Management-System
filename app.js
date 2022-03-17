@@ -29,7 +29,7 @@ let viewsPath = __dirname + "/views/";
 app.get("/", function (req, res) {
     let fileName = viewsPath + "homepage.html";
     res.sendFile(fileName);
-  });
+});
 
   app.get("/getNewBook", function (req, res) {
     let fileName = viewsPath + "NewBook.html";
