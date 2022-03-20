@@ -1,3 +1,5 @@
 body {
     background-color: rgb(170, 215, 221);
+    position: relative ;
+    left: 300px;
 }

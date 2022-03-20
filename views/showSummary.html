@@ -1,14 +1,12 @@
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Get Summmary by Title</h1></br>
-    <h1>
-        <link rel="stylesheet" href="style.css">
-        <a href="/" style="color: #152baa">Homepage</a>  <a href="/getNewBook" style="color: #152baa">New Book</a> <a href="/getListBooks"style="color: #152baa">List Books</a> <a href="/deleteBooks"style="color: #152baa">Delete Books</a> <a href="/updateBooks"style="color: #152baa">Update Books</a> <a href="/getSummary"style="color: #152baa">Summary by Title</a> 
-    </h1>
-    The summary for this title is: 
+    <a href="/" style="color: #152baa">Homepage</a>  <a href="/getNewBook" style="color: #152baa">New Book</a> <a href="/getListBooks"style="color: #152baa">List Books</a> <a href="/deleteBooks"style="color: #152baa">Delete Books</a> <a href="/updateBooks"style="color: #152baa">Update Books</a>  
+    <h1>Get Summmary by Title</h1>
+
+    <b> The summary for this title is: </b>
     <% for ( let i =0; i< books.length;i++){ %>
                 <%= books[i].summary %>
     <% }%>
